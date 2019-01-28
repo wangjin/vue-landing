@@ -6,8 +6,7 @@
                 active-text-color="#409EFF"
                 :default-active="$route.path"
                 class="el-menu"
-                mode="horizontal"
-                @select="handleSelect">
+                mode="horizontal">
             <el-menu-item index="1">
                 <router-link to="/">
                     <div>Home</div>
@@ -37,29 +36,14 @@
 
 <script>
     export default {
-        name: "Header",
-        data() {
-            return {
-                activeIndex: '1',
-                activeIndex2: '1'
-            };
-        },
-        methods: {
-            handleSelect(key, keyPath) {
-                console.log(key, keyPath);
-            }
-        }
+        name: "Header"
     }
 </script>
 
 <style scoped>
 
     .header {
-        background-color: rgba(0, 21, 41, .95);
-    }
-
-    .el-submenu__title:hover {
-        background-color: #000 !important;
+        background-color: #0C2135;
     }
 
     /*去掉导航栏底部白线*/
